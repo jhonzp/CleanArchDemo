@@ -1,4 +1,6 @@
-﻿using cleanArch.Application.Interfaces;
+﻿using AutoMapper;
+using AutoMapper.QueryableExtensions;
+using cleanArch.Application.Interfaces;
 using cleanArch.Application.ViewModels;
 using CleanArch.Domain.Commands;
 using CleanArch.Domain.Core.Bus;
@@ -13,27 +15,23 @@ namespace cleanArch.Application.Services
     {
         private readonly ICourseRepository _courseRepository;
         private readonly IMediatorHandler _bus;
+        private readonly IMapper _autoMapper;
 
-        public CourseService(ICourseRepository courseRepository,IMediatorHandler bus)
+        public CourseService(ICourseRepository courseRepository,IMediatorHandler bus, IMapper automapper)
         {
             _courseRepository = courseRepository;
             _bus = bus;
+            _autoMapper = automapper;
         }
 
         public void Create(CourseViewModel course)
-        {
-            var createCourseCommand = new CreateCourseCommand(
-                course.Name, course.Description,course.ImageUrl
-                );
-            _bus.SendCommand(createCourseCommand);
+        {           
+            _bus.SendCommand(_autoMapper.Map<CreateCourseCommand>(course));
         }
 
-        public CourseViewModel GetCourses()
+        public IEnumerable<CourseViewModel> GetCourses()
         {
-            return new CourseViewModel()
-            {
-                Courses = _courseRepository.GetCourses()
-            };
+            return _courseRepository.GetCourses().ProjectTo<CourseViewModel>(_autoMapper.ConfigurationProvider);
         }
     }
 }
