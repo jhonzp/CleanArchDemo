@@ -20,7 +20,7 @@ namespace cleanArch.Application.Services
             _bus = bus;
         }
 
-        public void Add(CourseViewModel course)
+        public void Create(CourseViewModel course)
         {
             var createCourseCommand = new CreateCourseCommand(
                 course.Name, course.Description,course.ImageUrl
