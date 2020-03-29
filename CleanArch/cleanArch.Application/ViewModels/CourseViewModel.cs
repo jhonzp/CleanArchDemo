@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace cleanArch.Application.ViewModels
+namespace CleanArch.Application.ViewModels
 {
     public class CourseViewModel
     {

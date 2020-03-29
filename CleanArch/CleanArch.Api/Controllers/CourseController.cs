@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using cleanArch.Application.Interfaces;
-using cleanArch.Application.ViewModels;
+using CleanArch.Application.Interfaces;
+using CleanArch.Application.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CleanArch.Api.Controllers

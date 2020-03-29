@@ -19,7 +19,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArch.Domain", "CleanAr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArch.Infra.Data", "CleanArch.Infra.Data\CleanArch.Infra.Data.csproj", "{9E1EFE1F-C4F2-48E7-8792-542D81E96082}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cleanArch.Application", "cleanArch.Application\cleanArch.Application.csproj", "{B0182013-835D-4FBB-B739-FF7BFCF0AA6F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArch.Application", "cleanArch.Application\CleanArch.Application.csproj", "{B0182013-835D-4FBB-B739-FF7BFCF0AA6F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArch.Infra.IoC", "CleanArch.Infra.IoC\CleanArch.Infra.IoC.csproj", "{F4CF9CD7-40A6-4164-B394-690540C0208C}"
 EndProject

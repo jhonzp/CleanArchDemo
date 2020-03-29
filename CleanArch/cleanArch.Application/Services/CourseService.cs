@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using AutoMapper.QueryableExtensions;
-using cleanArch.Application.Interfaces;
-using cleanArch.Application.ViewModels;
+using CleanArch.Application.Interfaces;
+using CleanArch.Application.ViewModels;
 using CleanArch.Domain.Commands;
 using CleanArch.Domain.Core.Bus;
 using CleanArch.Domain.Interfaces;
@@ -9,7 +9,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace cleanArch.Application.Services
+namespace CleanArch.Application.Services
 {
     public class CourseService : ICourseService
     {

@@ -1,11 +1,11 @@
 ﻿using AutoMapper;
-using cleanArch.Application.ViewModels;
+using CleanArch.Application.ViewModels;
 using CleanArch.Domain.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace cleanArch.Application.AutoMapper
+namespace CleanArch.Application.AutoMapper
 {
     public class DomainToViewModelProfile : Profile
     {

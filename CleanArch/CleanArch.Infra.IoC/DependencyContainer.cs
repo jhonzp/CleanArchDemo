@@ -1,5 +1,5 @@
-﻿using cleanArch.Application.Interfaces;
-using cleanArch.Application.Services;
+﻿using CleanArch.Application.Interfaces;
+using CleanArch.Application.Services;
 using CleanArch.Domain.Commands;
 using CleanArch.Domain.CommandsHandler;
 using CleanArch.Domain.Core.Bus;

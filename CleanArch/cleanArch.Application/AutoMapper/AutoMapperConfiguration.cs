@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace cleanArch.Application.AutoMapper
+namespace CleanArch.Application.AutoMapper
 {
     public class AutoMapperConfiguration
     {
